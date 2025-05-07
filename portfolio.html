@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eppili Vijay Kumar | Interactive Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body style="background-color: rgb(14, 43, 53);">
+
+    <header class="header">
+        <h1 class="title">Eppili Vijay Kumar</h1>
+
+    </header>
+    <section class="home">
+        <table>
+            <tr>
+
+                <td>
+                    <div class="home-content">
+                        <h3> Hello It's Me </h3>
+                        <h1>Eppili Vijay Kumar</h1>
+                        <h3> And I'm </h3>
+                        <p> a web Designer with extensive Ideas.<br> expertise is to create a website design and Frontend design with a better exploring AI Tools</p>
+
+                    </div>
+                </td>
+                <td colspan=2><img src="1736704708205.jpg" alt="Circular Image" class="circle-img center"></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="home-scl">
+                        <a href="https://www.linkedin.com/in/eppili-vijay-kumar/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                        <a href=" mailto:vijaykumareppili359@gmail.com "><i class='bx bxl-gmail'></i></a>
+                        <a href="https://www.instagram.com/soul_of_art_359/?igsh=MXRwODdoanplaXd0MA%3D%3D#" target="_blank"><i class='bx bxl-instagram'></i></a>
+                        <a href="https://maps.google.com/maps?q=18.881221, 84.580753"><i class='bx bx-home-alt-2'></i></a>
+                        <a href="https://wa.me/9581480103" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+                    </div>
+                </td>
+            </tr>
+
+        </table>
+    </section>
+    <main class="main-container">
+
+        <section class="card hover-effect">
+            <h2 class="section-title">Professional Summery</h2>
+            <p>Dedicated Software Engineer with a strong foundation in Computer Science and a passion for solving complex problems through efficient and scalable solutions. Thrive in collaborative environments and love expanding knowledge of emerging technologies.</p>
+        </section>
+
+        <section class="card hover-effect" x-data="{ open: false }">
+            <h2 @click="open = !open" class="section-title cursor-pointer">Technical Skills</h2>
+            <ul x-show="open" x-transition class="list-disc pl-5">
+                <li><strong>Programming:</strong> C, Java, JavaScript, Python</li>
+                <li><strong>Web Development:</strong> HTML, CSS</li>
+                <li><strong>Database:</strong> SQL</li>
+                <li><strong>Tools:</strong> Visual Studio, Turbo C, IDEL, Programiz Online, GDB Online Debugger</li>
+                <li><strong>Other Skills:</strong> Problem Solving, Analytical Thinking, Quick Learning, Creative Mindset, Time Management</li>
+            </ul>
+        </section>
+
+        <section class="card hover-effect" x-data="{ tab: 'iot' }">
+            <h2 class="section-title">Projects</h2>
+            <div class="flex space-x-4 mb-4">
+                <button @click="tab = 'iot'" class="tab-button">IoT Desk</button>
+                <button @click="tab = 'csp'" class="tab-button">CSP Project</button>
+                <button @click="tab = 'community'" class="tab-button">Community Project</button>
+            </div>
+            <div x-show="tab === 'iot'" x-transition>
+                <h3 class="project-title">IoT Portable Desk (Government-Patented Innovation)<a href="https://1drv.ms/w/c/73266f01aea33434/ER7KZB1opL5KpijjMxys768Bkxv9NSjcPY5vh_fHYwQXtg?e=99esoa" target="_blank" class="vk"><u>PATENT</u></a></h3>
+
+
+                <ul class="list-disc pl-5">
+
+                    <li><b>Bluetooth connectivity </b>for device integration (printers, projectors, laptops, etc.)</li>
+                    <li><b>Built-in holographic projector</b> that functions as a display and presentation tool</li>
+                    <li><b> Touchscreen interface</b> with embedded controls for intuitive use</li>
+                    <li><b>AI-powered voice control</b> for hands-free operation</li>
+                    <li><b>Lightweight, fiber-based construction</b> for portability and durability</li>
+                    <li><b>Rechargeable Li-ion battery</b> for extended, wireless usage</li>
+                </ul>
+            </div>
+            <div x-show="tab === 'csp'" x-transition>
+                <h3 class="project-title">CSP Project (Sachivalayam Initiative)</h3>
+                <p>Streamlined administrative processes, enhanced communication, and gained hands-on experience in local governance.</p>
+            </div>
+            <div x-show="tab === 'community'" x-transition>
+                <h3 class="project-title">Community Engagement Project</h3>
+                <p>Studied and improved the drinking water system of Baruva village; promoted awareness about water hygiene and infrastructure.</p>
+            </div>
+        </section>
+
+        <section class="card hover-effect">
+            <h2 class="section-title">Education Status</h2>
+            <div class="overflow-x-auto">
+                <table class="table-auto w-full">
+                    <thead class="bg-teal-100">
+                        <tr>
+                            <th class="px-4 py-2">Degree</th>
+                            <th class="px-4 py-2">Institute</th>
+                            <th class="px-4 py-2">Board/University</th>
+                            <th class="px-4 py-2">Percentage/CGPA</th>
+                            <th class="px-4 py-2">Year</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="text-center">
+                            <td class="border px-4 py-2">MCA (Pursuing)</td>
+                            <td class="border px-4 py-2">VIGNANS Institute of Information and Technology</td>
+                            <td class="border px-4 py-2">JNTUV University</td>
+                            <td class="border px-4 py-2">-</td>
+                            <td class="border px-4 py-2">Ongoing</td>
+                        </tr>
+                        <tr class="text-center">
+                            <td class="border px-4 py-2">B.Sc</td>
+                            <td class="border px-4 py-2">Samskara Bharati Degree College, Sompeta</td>
+                            <td class="border px-4 py-2">Ambedkar University</td>
+                            <td class="border px-4 py-2">89.5%</td>
+                            <td class="border px-4 py-2">2024</td>
+                        </tr>
+                        <tr class="text-center">
+                            <td class="border px-4 py-2">Intermediate</td>
+                            <td class="border px-4 py-2">Samskara Bharati Junior College, Sompeta</td>
+                            <td class="border px-4 py-2">Board of Intermediate Education</td>
+                            <td class="border px-4 py-2">94.9%</td>
+                            <td class="border px-4 py-2">2021</td>
+                        </tr>
+                        <tr class="text-center">
+                            <td class="border px-4 py-2">SSC</td>
+                            <td class="border px-4 py-2">Government High School, Baruva</td>
+                            <td class="border px-4 py-2">APSSC Board</td>
+                            <td class="border px-4 py-2">8.7 GPA</td>
+                            <td class="border px-4 py-2">2019</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="card hover-effect">
+            <h2 class="section-title">Hobbies</h2>
+            <ul class="list-disc pl-5">
+                <li>Exploring different art styles and techniques</li>
+                <li>Coding and learning new programming languages</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Eppili Vijay Kumar | All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>
